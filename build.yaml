@@ -13,12 +13,15 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_dongle dongle_display
     artifact-name: totem_dongle
+    
   - board: seeeduino_xiao_ble
     shield: totem_left_central
     artifact-name: totem_left_central
+    
   - board: seeeduino_xiao_ble
     shield: totem_left_peripheral
     artifact-name: totem_left_peripheral
+    
   - board: seeeduino_xiao_ble
     shield: totem_right_peripheral
     artifact-name: totem_right_peripheral
