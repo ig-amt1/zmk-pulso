@@ -1,6 +1,35 @@
 include:
+#  - board: seeeduino_xiao_ble
+#    shield: totem_left
+#  - board: seeeduino_xiao_ble
+#    shield: totem_right
+#  - board: seeeduino_xiao_ble
+#    shield: totem_dongle
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
+
+
+# pulso/totem
   - board: seeeduino_xiao_ble
-    shield: totem_left
+    shield: totem_dongle dongle_display
+    artifact-name: totem_dongle
   - board: seeeduino_xiao_ble
-    shield: totem_right
-# there is no settingsreset (needed) for the XIAO
+    shield: totem_left_central
+    artifact-name: totem_left_central
+  - board: seeeduino_xiao_ble
+    shield: totem_left_peripheral
+    artifact-name: totem_left_peripheral
+  - board: seeeduino_xiao_ble
+    shield: totem_right_peripheral
+    artifact-name: totem_right_peripheral
+    
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle dongle_display
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+    artifact-name: corne_dongle_with_logging
+
+    # reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+ #- board: seeeduino_xiao_ble
+ #  shield: settings_reset
