@@ -1,0 +1,18 @@
+
+
+file_format: "1"
+id: totem
+name: TOTEM
+type: shield
+url: https://github.com/englmaxy/zmk-config  |  https://github.com/GEIGEIGEIST/TOTEM
+requires: 
+  - seeeduino_xiao_ble
+exposes:
+  - i2c_oled
+features:
+  - keys
+siblings:
+  - totem_dongle
+  - totem_left_central
+  - totem_left_peripheral
+  - totem_right_peripheral
